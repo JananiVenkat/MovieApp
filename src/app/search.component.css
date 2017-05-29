@@ -1,0 +1,28 @@
+table
+{
+    background-color: lightgrey;
+}
+.margin-align
+{
+    margin-top: 20px;
+}
+.img-align
+{
+   width:50%;
+   position: relative;
+   margin-left:25%; 
+   padding: 5%; 
+}
+
+.list-align
+{
+    list-style: none;
+    font-size: 18px;
+    margin-left:0px; 
+    text-align: justify;
+}
+.list-align>li>h5
+{
+    font-size: 22px;
+    font-style: bold;
+}

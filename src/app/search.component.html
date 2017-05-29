@@ -1,0 +1,27 @@
+<div class="container">
+<h3>Search Movie</h3>   
+<input (keyup)="onKey($event)">
+<button class="btn btn-primary" (click)="onTestget(values)">Send Request</button>
+ </div>
+<div class="container margin-align">
+<div class="col-md-12">
+ <table>
+     <tr *ngFor="let val of getdata">
+         <td class="col-md-4"><img class="img-align" src="http://image.tmdb.org/t/p/w92{{val.poster_path}}"></td>
+         <td class="col-md-6">
+             <ul class=list-align>
+                <li><h5>Title: {{val.title}}</h5></li>
+                <li><strong><em>Release date :</em></strong> {{val.release_date}}</li>
+                <li><strong><em>popularity : </em></strong> {{val.popularity}}</li>
+                <li><strong><em>Description : </em></strong> {{val.overview}}</li>
+                <li><strong><em>Genre : </em></strong> {{getGenre(val.genre_ids)}}</li>
+ 
+             </ul>
+         </td>  
+     </tr>
+    
+</table>
+
+</div>
+</div>
+
